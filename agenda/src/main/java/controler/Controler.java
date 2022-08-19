@@ -19,6 +19,7 @@ import com.itextpdf.text.Paragraph;
 import com.itextpdf.text.pdf.PdfPCell;
 import com.itextpdf.text.pdf.PdfPTable;
 import com.itextpdf.text.pdf.PdfWriter;
+import com.itextpdf.text.pdf.*;
 
 import model.DAO;
 import model.JavaBeans;
@@ -216,7 +217,7 @@ public class Controler extends HttpServlet {
 			//Abrindo o documento pdf com app existente na maquina
 //			Runtime.getRuntime().exec(new String[] {"cmd.exe", "/c", "start", "contatos.pdf"});
 			documento.close();
-			
+			// Teste
 		} catch (Exception e) {
 			System.out.println(e);
 			documento.close();
